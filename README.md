@@ -1,16 +1,16 @@
 # FallenLeaves
-ğŸƒ A simulation system of deciduous scene based on Three.js.
+A simulation system of deciduous scene based on Three.js.
 
-### [µã»÷ÑİÊ¾](https://inknight.cn/FallenLeaves/index.html)
+### [ç‚¹å‡»æ¼”ç¤º](https://inknight.cn/FallenLeaves/index.html)
 
-### ÒÑÍê³É
+### å·²å®Œæˆ
 
-- [x] »ù´¡¿ò¼Ü´î½¨
-- [x] Ìì¿ÕºĞÒÔ¼°ÇĞ»»
-- [x] ÂäÒ¶Ğ§¹û
+- [x] åŸºç¡€æ¡†æ¶æ­å»º
+- [x] å¤©ç©ºç›’ä»¥åŠåˆ‡æ¢
+- [x] è½å¶æ•ˆæœ
 
-### ´ıÍê³É
+### å¾…å®Œæˆ
 
-- [ ] ³¡¾°ÍêÉÆ
-- [ ] ÂäÒ¶ÔË¶¯ÓÅ»¯
-- [ ] ¸ü¶à½»»¥
+- [ ] åœºæ™¯å®Œå–„
+- [ ] è½å¶è¿åŠ¨ä¼˜åŒ–
+- [ ] æ›´å¤šäº¤äº’
