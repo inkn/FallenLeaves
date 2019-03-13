@@ -114,12 +114,6 @@ function initModel() {
         console.log(object)
     });
 
-    // 石头堆
-    fbx_loader.load('./models/stone_heap/RockGroup4 (1).fbx', function (obj) {
-        obj.position.set(100, 0, 100)
-        screen.add(obj)
-    })
-
 
     // skybox
     var path1 = './textures/sky1/'
@@ -227,11 +221,12 @@ function initDatGui() {
 
 var skyI = 0
 function changeSkybox() {
+    skyI++
     if(skyI>=skys.length) {
         skyI = 0
     }
     scene.background = skys[skyI]
-    skyI++
+    
 }
 
 
@@ -426,7 +421,7 @@ function falling() {
 
         object2.rotation.y = time * (i < 4 ? i + 1 : -(i + 1));
 
-        object2.position.y -= 1 + Math.random(1)
+        object2.position.y -=  3 + Math.random(1)
         // object2.rotation.z += 1
         if (object2.position.y < -500) {
             object2.position.y = Math.random(200) + 500
