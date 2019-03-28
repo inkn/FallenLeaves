@@ -1,5 +1,5 @@
 # FallenLeaves
-ğŸƒ A simulation system of deciduous scene based on Three.js.
+A simulation system of deciduous scene based on Three.js.
 
 
 ### °²×°
