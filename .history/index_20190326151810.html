@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>落叶场景</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        background-color: #ffffff;
+        margin: 0;
+        overflow: hidden;
+        font-family: arial;
+    }
+
+    #main {
+        height: 100%;
+        width: 100%;
+    }
+
+    #plugins {
+        float: left;
+    }
+
+    #mask {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url("./img/bg.jpg") no-repeat;
+        background-size: 100% auto;
+        z-index: 999999;
+    }
+
+    #mask>h1 {
+        color: #ffffff;
+        font-size: 80px;
+        text-align: center;
+        margin-top: 60px;
+
+    }
+
+    #enter {
+        width: 208px;
+        height: 46px;
+        line-height: 46px;
+        color:#ffffff;
+        font-weight: 700;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        font-size: 16px;
+        text-indent: 50px;
+        background: url(./img/i_bg.png) 138px center no-repeat;
+        font-style: normal;
+        margin-top: 10%;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        position: absolute;
+        top: 500px;
+        left: 500;
+    }
+
+    #enter:hover {
+        background-position: 150px center;
+        margin-left: 10px;
+    }
+</style>
+
+<body>
+    <div id="plugins"></div>
+    <div id="main"></div>
+    <div id="mask">
+        <h1>基于 WebGL 的落叶场景仿真系统</h1>
+        <em id="enter">进入系统</em>
+    </div>
+
+    <!-- 基础配置 -->
+    <script src="./js/three.js"></script>
+    <script src="./js/OrbitControls.js"></script>
+    <script src="./js/PointerLockControls.js"></script>
+    <script src="./js/stats.min.js"></script>
+    <script src="./js/dat.gui.min.js"></script>
+    <script src="./js/TGALoader.js"></script>
+    <script src="./js/FBXLoader.js"></script>
+
+    <script src="./js/inflate.min.js"></script>
+    <script src="./createLeaves.js"></script>
+    <script src="./init.js"></script>
+    <script src="./animate.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
